@@ -1,16 +1,16 @@
-Read Me About EvenBetterAuthorizationSample
-===========================================
-1.0
+# Apple's EvenBetterAuthorizationSample 1.0
 
-*
+```
+./SMJobBlessUtil.py setreq Build/Products/Debug/EvenBetterAuthorizationSample.app App/App-Info.plist HelperTool/HelperTool-Info.plist
+```
 
 EvenBetterAuthorizationSample shows how to factor privileged operations out of your application and into a privileged helper tool that is run by launchd.  When your application must do privileged operations, Apple recommends that you use this approach because it improves security by:
 
-o ensuring that your privileged code inherits a trusted environment
+* ensuring that your privileged code inherits a trusted environment
 
-o reducing the amount of code that runs with elevated privileges
+* reducing the amount of code that runs with elevated privileges
 
-o making your privileged code easier to audit for security
+* making your privileged code easier to audit for security
 
 EvenBetterAuthorizationSample uses modern technology--namely SMJobBless, introduced in 10.6, and NSXPCConnection, introduced in 10.8--to radically reduce the code needed to support privileged helper tools as compared to older samples.
 
