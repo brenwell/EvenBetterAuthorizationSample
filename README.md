@@ -1,8 +1,14 @@
-# Apple's EvenBetterAuthorizationSample 1.0
+# Apple's EvenBetterAuthorizationSample
+
+### I have simply added the Python helper script from the JMJobBless demo to make it easier to codesign.
+
+Run this command after you have added the Developer ID to your keychain:
 
 ```
 ./SMJobBlessUtil.py setreq Build/Products/Debug/EvenBetterAuthorizationSample.app App/App-Info.plist HelperTool/HelperTool-Info.plist
 ```
+
+Version 1.0
 
 EvenBetterAuthorizationSample shows how to factor privileged operations out of your application and into a privileged helper tool that is run by launchd.  When your application must do privileged operations, Apple recommends that you use this approach because it improves security by:
 
