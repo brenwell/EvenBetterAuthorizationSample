@@ -1,0 +1,329 @@
+TXPCService
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Info.plist /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService-Info.plist
+cCompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService normal x86_64
+cCopyStringsFile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/en.lproj/Common.strings Common/en.lproj/Common.strings
+cCopyStringsFile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/de.lproj/Common.strings Common/de.lproj/Common.strings
+cPBXCp Build/Products/Debug/com.example.apple-samplecode.EBAS.HelperTool Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool
+cProcessProductPackaging /Users/Brendon/Library/MobileDevice/Provisioning\ Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile
+cTouch /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent
+cCodeSign /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c000000005243E79F00000000000000AA
+t1380181919
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c00000000528F6BD6000000000000044C
+t1385130966
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000528F6BD600000000000001DB
+t1385130966
+s475
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000528F6BD700000000000C9E68
+t1385130967
+s826984
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000528F6BD90000000000076260
+t1385130969
+s483936
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ServiceManagement.framework/ServiceManagement
+c00000000528F6BD9000000000000C968
+t1385130969
+s51560
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist
+c00000000528F6BE10000000000000127
+t1385130977
+s295
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService-Info.plist
+c0000000052D27F430000000000000514
+t1389526851
+s1300
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m
+c000000005238C4480000000000001FEF
+t1379451976
+s8175
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m
+c000000005238C4480000000000000BB4
+t1379451976
+s2996
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o
+t1389527187
+s23896
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o
+t1389527187
+s45880
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/com.example.apple-samplecode.EBAS.XPCService.LinkFileList
+c0000000052D2809300000000000001F1
+t1389527187
+s497
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o
+t1389527187
+s4900
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent
+t1389527187
+s307
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.HelperTool
+c0000000052D27FE0000000000000AE30
+t1389527008
+s44592
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc
+t1389527187
+s102
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Info.plist
+t1389527187
+s1773
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool
+t1389527187
+s44592
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService
+t1389527187
+s41420
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/de.lproj/Common.strings
+t1389527187
+s1394
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/en.lproj/Common.strings
+t1389527187
+s1346
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile
+t1389527187
+s7608
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m
+c000000005238C4480000000000002331
+t1379451976
+s9009
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/de.lproj/Common.strings
+c000000005200AA8100000000000002BA
+t1375775361
+s698
+
+N/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/en.lproj/Common.strings
+c0000000051FFCD6F00000000000002A0
+t1375718767
+s672
+
+N/Users/Brendon/Library/MobileDevice/Provisioning Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile
+c0000000052D27FBC0000000000001DB8
+t1389526972
+s7608
+
+CBuild AST from /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m
+r0
+
+CBuild AST from /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m
+r0
+
+CBuild AST from /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescc0b0013b882b841^4b910c13b882b841^---0#1#1#--18"Check dependencies36"497A7EBE-F5A5-426E-9450-36AFA0CE825F-
+
+CCodeSign /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc
+s411219987.587071
+e411219987.688303
+r1
+xCodeSign
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"CodeSign Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc78"CodeSign Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc50549613b882b841^4835b013b882b841^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/0000000000000000^857"CodeSign Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    Using code signing identity "Mac Developer: Brendon Blackwell (X8M2CG34BT)" and provisioning profile "Mac Team Provisioning Profile: *" (8379337A-DE55-4F13-9365-5AB0A1695208)    /usr/bin/codesign --force --sign 3DA435A44DF384DCDC0DC599195E402894D1FDF0 --entitlements /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc36"BAFEA9BD-42CA-4701-B88E-E56052AF3F48-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CCompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s411219987.051769
+e411219987.552224
+r1
+xCompileC
+xBuild/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.h
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/HelperTool/HelperTool.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m204"CompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o Common/Common.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerf8550d13b882b841^986b8d13b882b841^---0#0#1#-19%DVTDocumentLocation2@77"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m0000000000000000^2752"CompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o Common/Common.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-field-initializers -Wmissing-prototypes -Wimplicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wunused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wunknown-pragmas -Wshadow -Wfour-char-constants -Wconversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wsign-compare -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -Wno-selector -Wstrict-selector-match -Wundeclared-selector -Wdeprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wsign-conversion -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.hmap -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/DerivedSources/x86_64 -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/DerivedSources -F/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug -MMD -MT dependencies -MF /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.d --serialize-diagnostics /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.dia -c /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.m -o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o36"9F296586-56EE-4878-837C-41E1F03BB46C-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CCompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s411219987.053039
+e411219987.558552
+r1
+xCompileC
+xBuild/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.h
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/Common.h
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/HelperTool/HelperTool.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Compile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m230"CompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o App-Sandboxed/XPCService/XPCService.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilere6ae0d13b882b841^2efe8e13b882b841^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m0000000000000000^2812"CompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o App-Sandboxed/XPCService/XPCService.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-field-initializers -Wmissing-prototypes -Wimplicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wunused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wunknown-pragmas -Wshadow -Wfour-char-constants -Wconversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wsign-compare -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -Wno-selector -Wstrict-selector-match -Wundeclared-selector -Wdeprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wsign-conversion -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.hmap -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/DerivedSources/x86_64 -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/DerivedSources -F/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug -MMD -MT dependencies -MF /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.d --serialize-diagnostics /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.dia -c /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.m -o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o36"6D63BD6C-B8D2-4D1E-A9AD-327EAB275892-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CCompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s411219987.054224
+e411219987.551959
+r1
+xCompileC
+xBuild/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m218"CompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o App-Sandboxed/XPCService/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compilerdbfa0d13b882b841^f94d8d13b882b841^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m0000000000000000^2776"CompileC Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o App-Sandboxed/XPCService/main.m normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-field-initializers -Wmissing-prototypes -Wimplicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wmissing-braces -Wparentheses -Wswitch -Wunused-function -Wunused-label -Wunused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wunknown-pragmas -Wshadow -Wfour-char-constants -Wconversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wsign-compare -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -Wno-selector -Wstrict-selector-match -Wundeclared-selector -Wdeprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.8 -g -Wsign-conversion -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.hmap -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/DerivedSources/x86_64 -I/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/DerivedSources -F/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug -MMD -MT dependencies -MF /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.dia -c /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/main.m -o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o36"054539D7-9859-43FB-83FE-538B3BC5FF22-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CCopyStringsFile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/de.lproj/Common.strings Common/de.lproj/Common.strings
+s411219987.581557
+e411219987.582421
+r1
+xCopyStringsFile
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/de.lproj/Common.strings
+xCommon/de.lproj/Common.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Copy Common/de.lproj/Common.strings159"CopyStringsFile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/de.lproj/Common.strings Common/de.lproj/Common.strings81e99413b882b841^a81a9513b882b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/de.lproj/Common.strings0000000000000000^499"CopyStringsFile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/de.lproj/Common.strings Common/de.lproj/Common.strings    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/de.lproj -- Common/de.lproj/Common.strings36"C1AD2868-19A1-4BFA-ADE6-D9E16C83F312-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CCopyStringsFile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/en.lproj/Common.strings Common/en.lproj/Common.strings
+s411219987.581367
+e411219987.582326
+r1
+xCopyStringsFile
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/en.lproj/Common.strings
+xCommon/en.lproj/Common.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection35"Copy Common/en.lproj/Common.strings159"CopyStringsFile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/en.lproj/Common.strings Common/en.lproj/Common.strings16df9413b882b841^f9139513b882b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/Common/en.lproj/Common.strings0000000000000000^499"CopyStringsFile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/en.lproj/Common.strings Common/en.lproj/Common.strings    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Resources/en.lproj -- Common/en.lproj/Common.strings36"E65D153B-3CD7-4D74-A1F1-AEC32573725E-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CLd /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService normal x86_64
+s411219987.559296
+e411219987.580690
+r1
+xLd
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService
+xnormal
+xx86_64
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/com.example.apple-samplecode.EBAS.XPCService.LinkFileList
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/Common.o
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/XPCService.o
+d/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/main.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/ServiceManagement.framework/ServiceManagement
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Security.framework/Security
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection189"Link /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService146"Ld Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService normal x86_64c93b8f13b882b841^58a99413b882b841^---0#0#1#--1421"Ld Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService normal x86_64    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug -F/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug -filelist /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/com.example.apple-samplecode.EBAS.XPCService.LinkFileList -mmacosx-version-min=10.8 -fobjc-arc -fobjc-link-runtime -framework Foundation -framework ServiceManagement -framework Security -Xlinker -dependency_info -Xlinker /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/Objects-normal/x86_64/com.example.apple-samplecode.EBAS.XPCService_dependency_info.dat -o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/MacOS/com.example.apple-samplecode.EBAS.XPCService36"A10472A0-0C6F-41D9-8B5D-D18812715F16-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CPBXCp Build/Products/Debug/com.example.apple-samplecode.EBAS.HelperTool Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool
+s411219987.582759
+e411219987.583472
+r1
+xPBXCp
+xBuild/Products/Debug/com.example.apple-samplecode.EBAS.HelperTool
+xBuild/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection151"Copy Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool218"PBXCp Build/Products/Debug/com.example.apple-samplecode.EBAS.HelperTool Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool69389513b882b841^f25e9513b882b841^---0#0#1#-19%DVTDocumentLocation2@208"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool0034a436dcffdf42^671"PBXCp Build/Products/Debug/com.example.apple-samplecode.EBAS.HelperTool Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices/com.example.apple-samplecode.EBAS.HelperTool    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.HelperTool /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Library/LaunchServices36"FE6FC92A-640C-4C6F-93D8-C962F1543FC4-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CProcessInfoPlistFile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Info.plist /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService-Info.plist
+s411219987.049956
+e411219987.051124
+r1
+xProcessInfoPlistFile
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Info.plist
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Process /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService-Info.plist157"ProcessInfoPlistFile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Info.plist App-Sandboxed/XPCService/XPCService-Info.plist13d40c13b882b841^ca160d13b882b841^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService-Info.plist0000000000000000^537"ProcessInfoPlistFile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Info.plist App-Sandboxed/XPCService/XPCService-Info.plist    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    builtin-infoPlistUtility /Users/Brendon/Downloads/EvenBetterAuthorizationSample/App-Sandboxed/XPCService/XPCService-Info.plist -expandbuildsettings -platform macosx -o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/Info.plist36"9BF224B2-BC2C-4BB3-84E6-DEE6A75DA2A9-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent
+s411219987.585658
+e411219987.586735
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection241"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent241"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent55f69513b882b841^69379613b882b841^---0#0#1#-19%DVTDocumentLocation2@191"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent0034a436dcffdf42^642"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Entitlements.plist -entitlements -format xml -o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Intermediates/EvenBetterAuthorizationSample.build/Debug/XPCService.build/com.example.apple-samplecode.EBAS.XPCService.xcent36"554482E3-E1E1-49EF-909C-1AB75C767534-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CProcessProductPackaging /Users/Brendon/Library/MobileDevice/Provisioning\ Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile
+s411219987.583774
+e411219987.584471
+r1
+xProcessProductPackaging
+x/Users/Brendon/Library/MobileDevice/Provisioning Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile
+x/Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection241"ProcessProductPackaging /Users/Brendon/Library/MobileDevice/Provisioning\ Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile241"ProcessProductPackaging /Users/Brendon/Library/MobileDevice/Provisioning\ Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile467a9513b882b841^6aa09513b882b841^---0#0#1#-19%DVTDocumentLocation2@166"file:///Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile0034a436dcffdf42^616"ProcessProductPackaging /Users/Brendon/Library/MobileDevice/Provisioning\ Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile    cd /Users/Brendon/Downloads/EvenBetterAuthorizationSample    builtin-productPackagingUtility /Users/Brendon/Library/MobileDevice/Provisioning\ Profiles/8379337A-DE55-4F13-9365-5AB0A1695208.provisionprofile -o /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc/Contents/embedded.provisionprofile36"00079A99-E7C6-4381-BC24-C1533DCC631C-
+bB15ABF40-C5D6-4330-BDCA-1EFF0FF143E2
+
+CTouch /Users/Brendon/Downloads/EvenBetterAuthorizationSample/Build/Products/Debug/com.example.apple-samplecode.EBAS.XPCService.xpc
+r0
+
