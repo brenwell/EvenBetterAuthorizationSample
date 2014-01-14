@@ -31,7 +31,7 @@
 	<key>SMPrivilegedExecutables</key>
 	<dict>
 		<key>com.example.apple-samplecode.EBAS.HelperTool</key>
-		<string>anchor apple generic and identifier &quot;com.example.apple-samplecode.EBAS.HelperTool&quot; and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = 9ZD5XCNS2R)</string>
+		<string>identifier "com.example.apple-samplecode.EBAS.HelperTool" and anchor apple generic and certificate leaf[subject.CN] = "Mac Developer: Brendon Blackwell (X8M2CG34BT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 	</dict>
 </dict>
 </plist>

@@ -97,6 +97,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SMJobBlessUtil.py; sourceTree = "<group>"; };
+		DA70FCE81884E92A009FE52A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E40FA42017ABE51300F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/MainMenu-Sandboxed.xib"; sourceTree = "<group>"; };
 		E40FA42217ABE56300F6CB03 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/MainMenu-Sandboxed.strings"; sourceTree = "<group>"; };
 		E40FA42317ABE58F00F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -117,7 +119,6 @@
 		E4AD7AA01608DBEC00F594A2 /* XPCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCService.h; sourceTree = "<group>"; };
 		E4AD7AA11608DBEC00F594A2 /* XPCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCService.m; sourceTree = "<group>"; };
 		E4AD7AB81609093B00F594A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E4AD7ACE160917C200F594A2 /* Read Me About EvenBetterAuthorizationSample.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Read Me About EvenBetterAuthorizationSample.txt"; sourceTree = "<group>"; };
 		E4C32DC516023990002AFAB3 /* App-Sandboxed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "App-Sandboxed.entitlements"; sourceTree = "<group>"; };
 		E4C32DCB16023A97002AFAB3 /* com.example.apple-samplecode.EBAS.XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "com.example.apple-samplecode.EBAS.XPCService.xpc"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C372E315E7CC10007554D3 /* HelperTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelperTool-Info.plist"; sourceTree = "<group>"; };
@@ -234,7 +235,7 @@
 		E4ED7B7415E79B83002AD912 = {
 			isa = PBXGroup;
 			children = (
-				E4AD7ACE160917C200F594A2 /* Read Me About EvenBetterAuthorizationSample.txt */,
+				DA70FCE81884E92A009FE52A /* README.md */,
 				E4ED7B8515E79B83002AD912 /* App */,
 				E4AD7A891608DB4A00F594A2 /* App-Sandboxed */,
 				E4CBCCE815EBB50D0081DF5C /* Common */,
@@ -242,6 +243,7 @@
 				E4ED7B8215E79B83002AD912 /* Frameworks */,
 				E4ED7B8015E79B83002AD912 /* Products */,
 				E456726C15E7E4B80050ECAB /* Uninstall.sh */,
+				DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */,
 			);
 			sourceTree = "<group>";
 		};
