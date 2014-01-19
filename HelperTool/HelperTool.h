@@ -46,6 +46,8 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <syslog.h>
 
 // kHelperToolMachServiceName is the Mach service name of the helper tool.  Note that the value 
 // here has to match the value in the MachServices dictionary in "HelperTool-Launchd.plist".

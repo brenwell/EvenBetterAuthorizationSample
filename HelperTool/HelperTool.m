@@ -59,6 +59,9 @@
 
 @end
 
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
 @implementation HelperTool
 
 - (id)init
@@ -72,6 +75,8 @@
     return self;
 }
 
+////////////////////////////////////////////////////////////////
+
 - (void)run
 {
     // Tell the XPC listener to start processing requests.
@@ -82,6 +87,8 @@
     
     [[NSRunLoop currentRunLoop] run];
 }
+
+////////////////////////////////////////////////////////////////
 
 - (BOOL)listener:(NSXPCListener *)listener shouldAcceptNewConnection:(NSXPCConnection *)newConnection
     // Called by our XPC listener when a new connection comes in.  We configure the connection
@@ -97,6 +104,8 @@
     
     return YES;
 }
+
+////////////////////////////////////////////////////////////////
 
 - (NSError *)checkAuthorization:(NSData *)authData command:(SEL)command
     // Check that the client denoted by authData is allowed to run the specified command. 
@@ -154,6 +163,8 @@
     return error;
 }
 
+////////////////////////////////////////////////////////////////
+
 - (BOOL)isValidLicenseKey:(NSString *)licenseKey
     // Check that the license key is valid.  There are two things to note here.  The first 
     // is that I could have just passed an NSUUID across the NSXPCConnection, because 
@@ -180,6 +191,8 @@
     return success;
 }
 
+////////////////////////////////////////////////////////////////
+
 #pragma mark * HelperToolProtocol implementation
 
 // IMPORTANT: NSXPCConnection can call these methods on any thread.  It turns out that our 
@@ -195,14 +208,25 @@
     reply([self.listener endpoint]);
 }
 
+////////////////////////////////////////////////////////////////
+
 - (void)getVersionWithReply:(void(^)(NSString * version))reply
     // Part of the HelperToolProtocol.  Returns the version number of the tool.  Note that never
     // requires authorization.
 {
     // We specifically don't check for authorization here.  Everyone is always allowed to get
     // the version of the helper tool.
-    reply([[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]);
+    
+    Boolean setProxyResult = [self setGlobalProxyHost:"127.9.9.9" port:8080 enable:1];
+    
+    if (setProxyResult) {
+        reply(@"Success");
+    }else{
+        reply(@"Fail");
+    }
 }
+
+////////////////////////////////////////////////////////////////
 
 static NSString * kLicenseKeyDefaultsKey = @"licenseKey";
 
@@ -222,6 +246,8 @@ static NSString * kLicenseKeyDefaultsKey = @"licenseKey";
     reply(error, licenseKey);
 }
 
+////////////////////////////////////////////////////////////////
+
 - (void)writeLicenseKey:(NSString *)licenseKey authorization:(NSData *)authData withReply:(void(^)(NSError * error))reply
     // Part of the HelperToolProtocol.  Saves the license key to the defaults database.
 {
@@ -240,6 +266,8 @@ static NSString * kLicenseKeyDefaultsKey = @"licenseKey";
 
     reply(error);
 }
+
+////////////////////////////////////////////////////////////////
 
 - (void)bindToLowNumberPortAuthorization:(NSData *)authData withReply:(void(^)(NSError * error, NSFileHandle * ipv4Handle, NSFileHandle * ipv6Handle))reply
     // Part of the HelperToolProtocol.  Binds two sockets (TCPv4 and TCPv6) to port 80 and returns
@@ -310,5 +338,186 @@ static NSString * kLicenseKeyDefaultsKey = @"licenseKey";
         assert(junk == 0);
     }
 }
+
+////////////////////////////////////////////////////////////////
+
+-(BOOL)setProxy
+{
+    SCDynamicStoreRef store = SCDynamicStoreCreate(kCFAllocatorSystemDefault, CFSTR("broker"), NULL, NULL);
+    
+    SCDynamicStoreRef dynRef=SCDynamicStoreCreate(kCFAllocatorSystemDefault, CFSTR("iked"), NULL, NULL);
+    
+    syslog(LOG_WARNING, "%s", "Hello, World!");
+    
+    CFDictionaryRef ipv4key = (CFDictionaryRef)SCDynamicStoreCopyValue(dynRef,CFSTR("State:/Network/Global/IPv4"));
+    CFStringRef primaryserviceid = (CFStringRef)CFDictionaryGetValue(ipv4key,CFSTR("PrimaryService"));
+    //Setup:/Network/Service/ServiceID/Proxies
+    
+    const char *cs = CFStringGetCStringPtr( primaryserviceid, kCFStringEncodingMacRoman ) ;
+    syslog(LOG_WARNING, "%s", cs);
+    
+    CFStringRef primaryservicepath = (CFStringRef)CFStringCreateWithFormat(NULL,NULL,CFSTR("Setup:/Network/Service/%@/Proxies"),primaryserviceid);
+    
+    cs = CFStringGetCStringPtr( primaryservicepath, kCFStringEncodingMacRoman ) ;
+    syslog(LOG_WARNING, "%s", cs);
+    
+    //State:/Network/Service/CB3E440C-8D1B-4752-BBB1-E5F031C8D0C8/Proxies
+    CFMutableDictionaryRef newdnskey =  CFDictionaryCreateMutable(NULL, 0, NULL,NULL);
+    CFDictionarySetValue(newdnskey,CFSTR("HTTPProxy"),CFSTR("127.9.9.1"));
+    CFDictionarySetValue(newdnskey,CFSTR("HTTPSProxy"),CFSTR("127.9.9.1"));
+    CFShow(newdnskey);
+    if(SCDynamicStoreSetValue(dynRef, primaryserviceid, newdnskey)){
+        syslog(LOG_WARNING, "%s", "Success!");
+    }else{
+        syslog(LOG_WARNING, "%s", "Fail!");
+    }
+    
+    CFRelease(dynRef);
+    bool k = SCDynamicStoreSetValue(store, primaryservicepath , newdnskey);
+    CFRelease(store);
+    return k;
+}
+
+////////////////////////////////////////////////////////////////
+
+-(BOOL)setDNS
+{
+    //get current values
+    SCDynamicStoreRef dynRef=SCDynamicStoreCreate(kCFAllocatorSystemDefault, CFSTR("iked"), NULL, NULL);
+    CFDictionaryRef ipv4key = (CFDictionaryRef)SCDynamicStoreCopyValue(dynRef,CFSTR("State:/Network/Global/IPv4"));
+    CFStringRef primaryserviceid = (CFStringRef)CFDictionaryGetValue(ipv4key,CFSTR("PrimaryService"));
+    CFStringRef primaryservicepath = (CFStringRef)CFStringCreateWithFormat(NULL,NULL,CFSTR("State:/Network/Service/%@/DNS"),primaryserviceid);
+    CFDictionaryRef dnskey = (CFDictionaryRef)SCDynamicStoreCopyValue(dynRef,primaryservicepath);
+    
+    //create new values
+    CFMutableDictionaryRef newdnskey = CFDictionaryCreateMutableCopy(NULL,0,dnskey);
+    CFDictionarySetValue(newdnskey,CFSTR("DomainName"),CFSTR("iptton.com"));
+    
+    CFMutableArrayRef dnsserveraddresses = CFArrayCreateMutable(NULL,0,NULL);
+    CFArrayAppendValue(dnsserveraddresses, CFSTR("8.8.8.8"));
+    CFArrayAppendValue(dnsserveraddresses, CFSTR("4.3.2.2"));
+    CFDictionarySetValue(newdnskey, CFSTR("ServerAddresses"), dnsserveraddresses);
+    
+    //set values
+    bool success = SCDynamicStoreSetValue(dynRef, primaryservicepath, newdnskey);
+    if(success){
+        printf("set DNS success\n");
+    }else{
+        printf("set DNS FAIL\n");
+    }
+    //clean up
+    CFRelease(dynRef);
+    CFRelease(primaryservicepath);
+    CFRelease(dnskey);
+    CFRelease(dnsserveraddresses);
+    CFRelease(newdnskey);
+    
+    return success;
+}
+
+////////////////////////////////////////////////////////////////
+
+//Boolean set_global_proxy(int enable, const char* host, int port)
+-(Boolean)setGlobalProxyHost:(char*)host port:(int)port enable:(int)enable
+{
+    printf("set global proxy %d %s %d\n", enable, host, port);
+    SCPreferencesRef pref = SCPreferencesCreate(kCFAllocatorSystemDefault, CFSTR("setproxy"), 0);
+    if(!pref){
+        printf("Failed to open preference.\n");
+        return 1;
+    }
+    CFDictionaryRef set = SCPreferencesPathGetValue(pref, CFSTR("/NetworkServices/"));
+    if(!set){
+        printf("Failed to get network services.\n");
+    }
+    CFMutableDictionaryRef mset = CFDictionaryCreateMutableCopy(0, 0, set);
+    
+    SCDynamicStoreRef theDynamicStore = SCDynamicStoreCreate(nil, CFSTR("setproxy"), nil, nil);
+    CFDictionaryRef returnedPList;
+    returnedPList = (CFDictionaryRef)SCDynamicStoreCopyValue(theDynamicStore, CFSTR("State:/Network/Global/IPv4"));
+    CFStringRef primaryService = NULL;
+    if(returnedPList){
+        primaryService = (CFStringRef)CFDictionaryGetValue(returnedPList, CFSTR("PrimaryService"));
+    }
+    
+    size_t size = (unsigned long)CFDictionaryGetCount(set);
+    CFTypeRef *keysTypeRef = (CFTypeRef *) malloc( size * sizeof(CFTypeRef) );
+    CFTypeRef *valuesTypeRef = (CFTypeRef *) malloc( size * sizeof(CFTypeRef) );
+    CFDictionaryGetKeysAndValues(set, (const void **) keysTypeRef, (const void**)valuesTypeRef);
+    //const void **keys = (const void **) keysTypeRef;
+    printf("Number of interfaces = %ld\n", size);
+    Boolean success;
+    int i;
+    for(i=0; i<(int)size && keysTypeRef[i]; i++){
+        
+        CFStringRef service = (CFStringRef)keysTypeRef[i];
+        
+        printf("Setting interface %d\n", i);
+        
+        if(enable == 1 && primaryService && CFStringCompare(service, primaryService, kCFCompareCaseInsensitive) != 0){
+            continue;
+        }
+        
+        CFTypeRef value = valuesTypeRef[i];
+        if(!value){
+            continue;
+        }
+        CFDictionaryRef face = (CFDictionaryRef)value;
+        
+        CFMutableDictionaryRef mface = CFDictionaryCreateMutableCopy(0, 0, face);
+        CFMutableDictionaryRef mproxy = NULL;
+        CFDictionaryRef proxy = (CFDictionaryRef)CFDictionaryGetValue(mface, CFSTR("Proxies"));
+        if(NULL == proxy){
+            if(enable == 0){
+                CFRelease(mface);
+                continue;
+            }
+            printf("proxy = %p, try to create it\n", proxy);
+            mproxy = CFDictionaryCreateMutable(kCFAllocatorDefault, 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
+        }else{
+            mproxy = CFDictionaryCreateMutableCopy(0, 0, proxy);
+            if(mproxy == NULL)
+                return 4;
+        }
+        
+        if(enable){
+            CFStringRef cfHost = CFStringCreateWithCString(0, host, kCFStringEncodingASCII);
+            CFDictionarySetValue(mproxy, CFSTR("HTTPEnable"), CFNumberCreate(0, kCFNumberIntType, &enable));
+            CFDictionarySetValue(mproxy, CFSTR("HTTPProxy"), cfHost);
+            CFDictionarySetValue(mproxy, CFSTR("HTTPPort"), CFNumberCreate(0, kCFNumberIntType, &port));
+            CFDictionarySetValue(mproxy, CFSTR("HTTPSEnable"), CFNumberCreate(0, kCFNumberIntType, &enable));
+            CFDictionarySetValue(mproxy, CFSTR("HTTPSProxy"), cfHost);
+            CFDictionarySetValue(mproxy, CFSTR("HTTPSPort"), CFNumberCreate(0, kCFNumberIntType, &port));
+            CFRelease(cfHost);
+        }else{
+            CFDictionaryRemoveValue(mproxy, CFSTR("HTTPEnable"));
+            CFDictionaryRemoveValue(mproxy, CFSTR("HTTPProxy"));
+            CFDictionaryRemoveValue(mproxy, CFSTR("HTTPPort"));
+            CFDictionaryRemoveValue(mproxy, CFSTR("HTTPSEnable"));
+            CFDictionaryRemoveValue(mproxy, CFSTR("HTTPSProxy"));
+            CFDictionaryRemoveValue(mproxy, CFSTR("HTTPSPort"));
+        }
+        
+        CFDictionarySetValue(mface, CFSTR("Proxies"), mproxy);
+        CFDictionarySetValue(mset, service, mface);
+        
+        SCPreferencesPathSetValue(pref, CFSTR("/NetworkServices/"), mset);
+        success = SCPreferencesCommitChanges(pref);
+        printf("success: %d\n", success);
+        success = SCPreferencesApplyChanges(pref);
+        printf("success: %d\n", success);
+        
+        CFRelease(mface);
+        CFRelease(mproxy);
+    }
+    
+    CFRelease(mset);
+    CFRelease(pref);
+    free(keysTypeRef);
+    free(valuesTypeRef);
+    
+    return success;
+}
+
 
 @end

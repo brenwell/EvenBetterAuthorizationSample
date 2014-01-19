@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA673F7A188AF2430021F604 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA673F79188AF2430021F604 /* SystemConfiguration.framework */; };
 		E4AD7A881608DB4A00F594A2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4ED7B8315E79B83002AD912 /* Cocoa.framework */; };
 		E4AD7A8F1608DB4A00F594A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A8E1608DB4A00F594A2 /* AppDelegate.m */; };
 		E4AD7A911608DB4A00F594A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD7A901608DB4A00F594A2 /* main.m */; };
@@ -97,6 +98,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA673F79188AF2430021F604 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DA70FCE71884E921009FE52A /* SMJobBlessUtil.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = SMJobBlessUtil.py; sourceTree = "<group>"; };
 		DA70FCE81884E92A009FE52A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E40FA42017ABE51300F6CB03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/MainMenu-Sandboxed.xib"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA673F7A188AF2430021F604 /* SystemConfiguration.framework in Frameworks */,
 				E4C372FC15E7D4FE007554D3 /* Foundation.framework in Frameworks */,
 				E4CBCCE315EBA7000081DF5C /* Security.framework in Frameworks */,
 			);
@@ -261,6 +264,7 @@
 		E4ED7B8215E79B83002AD912 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA673F79188AF2430021F604 /* SystemConfiguration.framework */,
 				E4ED7B8315E79B83002AD912 /* Cocoa.framework */,
 				E4C372FB15E7D4FE007554D3 /* Foundation.framework */,
 				E4C372F915E7D4D8007554D3 /* Security.framework */,
