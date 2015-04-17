@@ -3,7 +3,7 @@
 This is how to set everything up (I believe) 
 
 >
-The original Apple Doc for this project can be found in README-ORIG
+The original Apple Doc for this project can be found in README-APPLE
 
 In this example the 3 identifiers for the 3 targets are
 
