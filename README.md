@@ -61,8 +61,7 @@ As this is an array, we will add a new item to the 0 index:
 * **Type:** string
 * **Value:** *"identifier `XPCService identifier` and anchor apple generic and certificate leaf[subject.CN] = `Certificate Name` and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */"*
 
-![screen shot 2015-04-17 at 15 38 38]
-(https://cloud.githubusercontent.com/assets/802618/7203043/f3ea52e6-e517-11e4-8f8b-7c2bda6cb2cf.png)
+![screen shot 2015-04-17 at 15 38 38](https://cloud.githubusercontent.com/assets/802618/7203043/f3ea52e6-e517-11e4-8f8b-7c2bda6cb2cf.png)
 
 ---
 
